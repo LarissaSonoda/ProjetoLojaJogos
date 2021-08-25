@@ -1,0 +1,45 @@
+﻿@model ProjetoLojaJogos.Models.Funcionario
+@{
+    ViewBag.Title = "ListarFuncionario";
+}
+
+<h2>Listar Funcionario</h2>
+<fieldset>
+    <div class="editor-label">@Html.DisplayNameFor(model => model.CodFunc) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.CodFunc)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.FuncNome) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.FuncNome)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.FuncCPF) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.FuncCPF)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.FuncRG) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.FuncRG)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.FuncDtNasc) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.FuncDtNasc)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.FuncEndereco) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.FuncEndereco)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.FuncCel) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.FuncCel)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.FuncEmail) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.FuncEmail)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.FuncCargo) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.FuncCargo)</div>
+    <br /><br />
+
+    @Html.ActionLink("Voltar", "Index", "Home")
+</fieldset>

@@ -17,25 +17,30 @@ namespace ProjetoLojaJogos.Models
         [Display(Name = "Nome do Jogo")]
         public string Nome { get; set; }
 
-        [Required(ErrorMessage = "O campo é obrigatório!")]
         [Display(Name = "Versão")]
         public string versao { get; set; }
 
+        [Required(ErrorMessage = "O campo é obrigatório!")]
         [Display(Name = "Desenvolvedor")]
         public string desenvolvedor { get; set; }
 
+        [Required(ErrorMessage = "O campo é obrigatório!")]
         [Display(Name = "Gênero")]
         public string genero { get; set; }
 
+        [Required(ErrorMessage = "O campo é obrigatório!")]
         [Display(Name = "Faixa Etária")]
         public int faixaetaria { get; set; }
 
+        [Required(ErrorMessage = "O campo é obrigatório!")]
         [Display(Name = "Plataforma")]
         public string plataforma { get; set; }
 
+        [Required(ErrorMessage = "O campo é obrigatório!")]
         [Display(Name = "Ano de lançamento")]
         public int dtlanc { get; set; }
 
+        [Required(ErrorMessage = "O campo é obrigatório!")]
         [Display(Name = "Sinopse")]
         public string desc { get; set; }
     }
