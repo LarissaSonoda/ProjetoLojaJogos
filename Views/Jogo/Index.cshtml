@@ -1,0 +1,93 @@
+﻿@model ProjetoLojaJogos.Models.Jogo
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Cadastro de Jogo</h2>
+@using (Html.BeginForm())
+
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CodJogo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CodJogo)
+            @Html.ValidationMessageFor(model => model.CodJogo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nome)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Nome)
+            @Html.ValidationMessageFor(model => model.Nome)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.versao)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.versao)
+            @Html.ValidationMessageFor(model => model.versao)
+
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.desenvolvedor)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.desenvolvedor)
+            @Html.ValidationMessageFor(model => model.desenvolvedor)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.genero)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.genero)
+            @Html.ValidationMessageFor(model => model.genero)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.faixaetaria)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.faixaetaria)
+            @Html.ValidationMessageFor(model => model.versao)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.plataforma)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.plataforma)
+            @Html.ValidationMessageFor(model => model.plataforma)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.dtlanc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.dtlanc)
+            @Html.ValidationMessageFor(model => model.dtlanc)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.desc)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.desc)
+            @Html.ValidationMessageFor(model => model.versao)
+        </div>
+
+        <div>
+            <br />
+            <input type="submit" value="Cadastrar" />
+        </div>
+
+    </fieldset>
+}
+
+

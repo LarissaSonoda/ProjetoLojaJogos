@@ -1,0 +1,46 @@
+﻿@model ProjetoLojaJogos.Models.Jogo
+@{
+    ViewBag.Title = "ListarJogo";
+}
+
+<h2>Listar Jogo</h2>
+<fieldset>
+    <div class="editor-label">@Html.DisplayNameFor(model => model.CodJogo) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.CodJogo)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.Nome) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.Nome)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.versao) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.versao)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.desenvolvedor) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.desenvolvedor)</div>
+    <br /><br />
+
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.genero) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.genero)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.faixaetaria) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.faixaetaria)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.plataforma) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.plataforma)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.dtlanc) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.dtlanc)</div>
+    <br /><br />
+
+    <div class="editor-label">@Html.DisplayNameFor(model => model.desc) </div>
+    <div class="editor-field">@Html.DisplayFor(model => model.desc)</div>
+    <br /><br />
+
+    @Html.ActionLink("Voltar", "Index", "Home")
+</fieldset>

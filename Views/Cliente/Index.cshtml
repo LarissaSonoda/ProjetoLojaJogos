@@ -1,0 +1,67 @@
+﻿@model ProjetoLojaJogos.Models.Cliente
+@{
+    ViewBag.Title = "Cliente";
+}
+
+<h2>Cadastro de Cliente</h2>
+@using (Html.BeginForm())
+
+{
+    @Html.ValidationSummary(true)
+<fieldset>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.CliNome)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.CliNome)
+        @Html.ValidationMessageFor(model => model.CliNome)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(model => model.CliCPF)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.CliCPF)
+        @Html.ValidationMessageFor(model => model.CliCPF)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.CliDtNasc)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.CliDtNasc)
+        @Html.ValidationMessageFor(model => model.CliDtNasc)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.CliEmail)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.CliEmail)
+        @Html.ValidationMessageFor(model => model.CliEmail)
+
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.CliCel)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.CliCel)
+        @Html.ValidationMessageFor(model => model.CliCel)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.CliEndereco)
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.CliEndereco)
+        @Html.ValidationMessageFor(model => model.CliEndereco)
+    </div>
+
+    <div>
+        <br />
+        <input type="submit" value="Cadastrar" />
+    </div>
+
+</fieldset>
+}
+
