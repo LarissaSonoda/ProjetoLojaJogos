@@ -17,11 +17,13 @@ namespace ProjetoLojaJogos.Models
         public string FuncNome { get; set; }
 
         [Display(Name="CPF")]
+        [RegularExpression(@"^\d{3}\.\d{3}\.\d{3}-\d{2}$", ErrorMessage = "Valor inválido")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
         public string FuncCPF { get; set; }
 
         [Display(Name ="RG")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
+        [RegularExpression(@"(^\d{1,3}).?(\d{3}).?(\d{3})-?(\d{1}|X|x$)", ErrorMessage = "RG Inválido")]
         public string FuncRG { get; set; }
 
         [Display(Name = "Data de Nascimento")]
