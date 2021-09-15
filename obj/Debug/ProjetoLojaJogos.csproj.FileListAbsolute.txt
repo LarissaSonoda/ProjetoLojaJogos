@@ -84,3 +84,16 @@ C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\obj\Debug\ProjetoLoja
 C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\obj\Debug\ProjetoLojaJogos.csproj.CopyComplete
 C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\obj\Debug\ProjetoLojaJogos.dll
 C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\obj\Debug\ProjetoLojaJogos.pdb
+C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\bin\MySql.Data.dll
+C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\bin\Google.Protobuf.dll
+C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\bin\Zstandard.Net.dll
+C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\bin\BouncyCastle.Crypto.dll
+C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\bin\Ubiety.Dns.Core.dll
+C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\bin\System.Memory.dll
+C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\bin\System.Buffers.dll
+C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\bin\K4os.Compression.LZ4.dll
+C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\bin\K4os.Hash.xxHash.dll
+C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\bin\System.Numerics.Vectors.dll
+C:\Users\sonod_6ehjwcc\Desktop\BG 2021\DS\ProjetoLojaJogos\bin\MySql.Data.xml

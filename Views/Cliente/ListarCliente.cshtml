@@ -1,35 +1,70 @@
-﻿@model ProjetoLojaJogos.Models.Cliente
+﻿@model IEnumerable<ProjetoLojaJogos.Models.Cliente>
 @{
     ViewBag.Title = "ListarCliente";
 }
 
 <h2>Listar Cliente</h2>
-<fieldset>
-    <div class="editor-label">@Html.DisplayNameFor(model => model.CliNome) </div>
-    <div class="editor-field">@Html.DisplayFor(model => model.CliNome)</div>
-    <br /><br />
+<p>@Html.ActionLink("Cadastrar Cliente", "Cliente")</p>
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CliNome)
+        </th>
 
-    <div class="editor-label">@Html.DisplayNameFor(model => model.CliCPF) </div>
-    <div class="editor-field">@Html.DisplayFor(model => model.CliCPF)</div>
-    <br /><br />
+        <th>
+            @Html.DisplayNameFor(model => model.CliCPF)
+        </th>
 
-    <div class="editor-label">@Html.DisplayNameFor(model => model.CliDtNasc) </div>
-    <div class="editor-field">@Html.DisplayFor(model => model.CliDtNasc)</div>
-    <br /><br />
+        <th>
+            @Html.DisplayNameFor(model => model.CliDtNasc)
+        </th>
 
-    <div class="editor-label">@Html.DisplayNameFor(model => model.CliEmail) </div>
-    <div class="editor-field">@Html.DisplayFor(model => model.CliEmail)</div>
-    <br /><br />
+        <th>
+            @Html.DisplayNameFor(model => model.CliEmail)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.CliCel)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.CliEndereco)
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CliNome)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.CliCPF)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.CliDtNasc)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.CliEmail)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.CliCel)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.CliEndereco)
+            </td>
+
+            <td>
+                @Html.ActionLink("Alterar", "AltCli", null, new { CliCPF = item.CliCPF }, new { @class = "btn btn-primary btn-xs" })
+                @Html.ActionLink("Deletar", "DelCli", null, new { CliCPF = item.CliCPF }, new { @class = "btn btn-danger btn-xs" })
+            </td>
+        </tr>
+    }
 
 
-    <div class="editor-label">@Html.DisplayNameFor(model => model.CliCel) </div>
-    <div class="editor-field">@Html.DisplayFor(model => model.CliCel)</div>
-    <br /><br />
-
-    <div class="editor-label">@Html.DisplayNameFor(model => model.CliEndereco) </div>
-    <div class="editor-field">@Html.DisplayFor(model => model.CliEndereco)</div>
-    <br /><br />
-
-    @Html.ActionLink("Voltar", "Index", "Home")
-</fieldset>
-
+</table>
