@@ -178,7 +178,6 @@
     <Content Include="Views\Funcionario\Funcionario.cshtml" />
     <Content Include="Views\Funcionario\ListarFuncionario.cshtml" />
     <Content Include="Views\Jogo\CadJogo.cshtml" />
-    <Content Include="Views\Cliente\CadCli.cshtml" />
     <Content Include="Views\Funcionario\CadFunc.cshtml" />
   </ItemGroup>
   <ItemGroup>

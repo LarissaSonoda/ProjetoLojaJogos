@@ -39,7 +39,7 @@ namespace ProjetoLojaJogos.Models
         public string CliEmail { get; set; }
 
         [Display(Name = "Celular")]
-        [Required(ErrorMessage = "O campo é obrigatório!")]
+       [Required(ErrorMessage = "O campo é obrigatório!")]
         public string CliCel { get; set; }
 
         [Display(Name = "Endereço")]

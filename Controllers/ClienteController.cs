@@ -18,11 +18,24 @@ namespace ProjetoLojaJogos.Controllers
         }
         Acoes ac = new Acoes();
 
+        
         [HttpPost]
-        public ActionResult CadCli(Cliente cli)
+        public ActionResult Cliente(Cliente cliente)
         {
-            ac.CadastrarCliente(cli);
-            return View(cli);
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    ac.CadastrarCliente(cliente);
+                    return RedirectToAction("ListarCliente");
+                }
+                return View(cliente);
+            }
+            catch
+            {
+                return RedirectToAction("Cliente");
+            }
+            
         }
 
         public ActionResult ListarCliente()

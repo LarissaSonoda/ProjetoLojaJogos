@@ -19,10 +19,21 @@ namespace ProjetoLojaJogos.Controllers
         Acoes ac = new Acoes();
 
         [HttpPost]
-        public ActionResult CadFunc(Funcionario func)
+        public ActionResult Funcionario(Funcionario funcionario)
         {
-            ac.CadastrarFunc(func);
-            return View(func);
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    ac.CadastrarFunc(funcionario);
+                    return RedirectToAction("ListarFuncionario");
+                }
+                return View(funcionario);
+            }
+            catch
+            {
+                return RedirectToAction("Funcionario");
+            }
         }
 
         public ActionResult ListarFuncionario()

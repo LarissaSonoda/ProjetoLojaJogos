@@ -19,10 +19,21 @@ namespace ProjetoLojaJogos.Controllers
        Acoes ac = new Acoes();
 
         [HttpPost]
-        public ActionResult CadJogo(Jogo jog)
+        public ActionResult Jogo(Jogo jogo)
         {
-            ac.CadastrarJogo(jog);
-            return View(jog);
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    ac.CadastrarJogo(jogo);
+                    return RedirectToAction("ListarJogo");
+                }
+                return View(jogo);
+            }
+            catch
+            {
+                return RedirectToAction("Jogo");
+            }
         }
         
         public ActionResult ListarJogo()
