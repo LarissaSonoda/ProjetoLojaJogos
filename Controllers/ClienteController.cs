@@ -13,8 +13,8 @@ namespace ProjetoLojaJogos.Controllers
         // GET: Cliente
         public ActionResult Cliente()
         {
-            var cliente = new Cliente();
-            return View(cliente);
+            //var cliente = new Cliente();
+            return View();
         }
         Acoes ac = new Acoes();
 
